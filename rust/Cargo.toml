@@ -29,13 +29,14 @@ rand = "0.7"
 rand_chacha = "0.2.1"
 rayon = "1.2.1"
 anyhow = "1.0.23"
-bellperson = { version = "0.12.0", default-features = false, features = ["gpu"] }
+bellperson = { git="https://github.com/liangping/bellperson.git", version = "0.12.3", default-features = false, features = ["gpu"] }
 serde_json = "1.0.46"
 rust-gpu-tools = "0.2.0"
 
 [dependencies.filecoin-proofs-api]
+git = "https://github.com/liangping/rust-filecoin-proofs-api.git"
 package = "filecoin-proofs-api"
-version = "5.4.1"
+version = "6.0.0"
 default-features = false
 
 [build-dependencies]
